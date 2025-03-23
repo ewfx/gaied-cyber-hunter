@@ -94,42 +94,53 @@ def email_ocr(message):
 
 
 def gen_prompts(email_info):
-    prompts = [
-        {
-            "role": "system",
-            "content": """You are a highly intelligent AI assistant specializing in analyzing email content and extracting requests and sub-requests.
-  Your primary task is to meticulously examine the provided email, including any attachments details, and identify all explicit or implicit requests and their associated sub-requests.
+  prompts = [
+      {
+          "role": "system",
+          "content": """You are a highly intelligent AI assistant specializing in analyzing email content (provided in text format) and extracting key information for triage. Your task is to meticulously examine the provided email, including attachment details, and identify:
+**Guidelines:**
+**1. Sender:** Extract the sender's email address.
+**2. Subject:** Extract the email subject.
+**3. Identify Priority:** Determine the email's priority (e.g., High, Medium, Low) based on keywords in the subject or body. Consider factors such as "urgent," "important," "kindly note","penalty" or deadlines mentioned.
+**4. Identify Primary Request Type:** Analyze the email's body and subject line for a primary request. Consider verbs like "please review,"urgent," "important," "kindly note","penalty","action needed,","authorize","disburse","numerical in terms of money" or "verify" for your approval and finally summarize the request"
+**5. Extract Sub-Requests:**  Look for secondary actions, tasks, or information needed to fulfill the main request. These could be nested within the main request or mentioned separately.
+**6. Request type if any from attachment:** List all attachments.Extract relevant information from the attachments, such as document titles or key data points like Consider verbs like "please review," "action needed,","authorize","disburse" or "verify" for your approval.Please find any primary request type in the attachment.
 
-  **Guidelines:**
+**Output Structure:**
 
-  1. **Identify Main Requests:** Analyze the email's body and subject line for clear requests or instructions.
-  2. **Extract Sub-Requests:**  Look for secondary actions, tasks, or information needed to fulfill the main request. These could be nested within the main request or mentioned separately.
-  3. **Handle Attachments:**  If the email contains attachments, process them as well. You may need to analyze text within the attachments to discover additional requests or sub-requests related to the main email content.
-  4. **Output Structure:** Present your findings in a structured format, clearly separating main requests from sub-requests. You can use a list or a numbered scheme to organize your output.
-  5. **Consider Context:**  Understand that email chains may contain ongoing conversations. When analyzing a specific email, consider the context from the previous messages in the chain.
-  6. **Be Precise and Comprehensive:** Ensure that you capture all relevant requests and sub-requests within the email and attachments.
+Present your findings in a structured format using Markdown or JSON, clearly labeling each piece of information.
 
   **Example:**
-
   **Email:**
-  "Please prepare a report on sales figures for Q3. I need a breakdown by region and product category, and a comparison to Q2 figures. Also, please send me a copy of the PowerPoint presentation you used in the last meeting."
+  "Loan disbursement information"
+  "Attachments have all the required doucuments to disburse the loan"
 
-  **Output:**
+**Input:** (Email content with attachments)
 
-  **Main Request:** Prepare a report on sales figures for Q3.
-  **Sub-Requests:**
-  1. Breakdown by region.
-  2. Breakdown by product category.
-  3. Comparison to Q2 figures.
-  4. Send a copy of the PowerPoint presentation.
+**Output:**
 
-  **Important:** Please provide only the requests and sub-requests, without any additional commentary or explanations. Respond in Markdown.
+json {"Subject": "Urgent Request": "Project Update", "Priority": "High", "Primary Request Type": "Mention the primary requests on the mail","Sub-Requests":"check if any subrequest","Request type if any from attachment:"verify"}
+
+**Important:**
+
+*   Prioritize accuracy and conciseness in your analysis.
+*   If information is missing or unclear, indicate it as "Not Found" or "Unknown."
+*   Focus on extracting information relevant for triage and prioritization.
+
+Reasoning:
+
+Sender, Subject, and Priority: Identifying these elements quickly allows for initial assessment and routing of the email.
+Action Required: Understanding the desired action helps determine the appropriate next steps for the email recipient.
+Summary: A concise summary provides context without requiring the recipient to read the entire email.
+Attachments: Analyzing attachments allows for a more comprehensive understanding of the email's purpose and content, especially if relevant information is included within them. By listing attachments and summarizing their content (if possible), you can further inform the triage process.
+This prompt focuses on extracting key information for email triage, including handling attachments to help you prioritize and route emails effectively. Let me know if you'd like any modifications or if you have another question!
   """
-        },
-        {"role": "user", "content": email_info},
-    ]
+      },
+      {"role": "user", "content": email_info},
+  ]
 
-    return prompts
+  return prompts
+
 
 
 def gen_prompts(email_info):
