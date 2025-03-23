@@ -128,7 +128,6 @@ json {"Subject": "Urgent Request": "Project Update", "Priority": "High", "Primar
 *   Focus on extracting information relevant for triage and prioritization.
 
 Reasoning:
-
 Sender, Subject, and Priority: Identifying these elements quickly allows for initial assessment and routing of the email.
 Action Required: Understanding the desired action helps determine the appropriate next steps for the email recipient.
 Summary: A concise summary provides context without requiring the recipient to read the entire email.
