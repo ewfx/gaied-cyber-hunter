@@ -1,0 +1,25 @@
+Subject: Request for Payment History - Mortgage Loan 3031323334
+
+Dear [Bank Name],
+
+I am writing to request a detailed payment history for my mortgage loan, account number 3031323334. I need this information for tax preparation purposes and to reconcile my records.
+
+Could you please send me a document showing all payments made over the past calendar year, including dates, amounts, and the breakdown of principal and interest?
+
+Please let me know if there are any fees associated with this request and the estimated time for receiving the document.
+
+Thank you for your assistance.
+
+Sincerely,
+
+[Your Name]
+[Your Contact Information]
+
+~~~~~~~~~~~~~~
+Category: Loan Documentation
+~~~~~~~~~~~~~~
+Subcategory: Payment History Copy Request
+~~~~~~~~~~~~~~
+mainask: dummy
+
+~~~~~~~~~~~~~~
