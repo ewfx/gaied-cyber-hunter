@@ -1,0 +1,25 @@
+Subject: Loan Payoff Request - Auto Loan 5678901234
+
+Dear [Bank Name],
+
+I am writing to request the payoff amount for my auto loan, account number 5678901234. I intend to pay off the remaining balance in full within the next two weeks.
+
+Could you please provide me with the exact amount required to close the loan, including any applicable fees or interest accrued up to the payoff date? I would also appreciate instructions on how to make the payment.
+
+Additionally, please let me know what documentation I will receive after the loan is paid off, confirming that the lien has been released.
+
+Thank you for your prompt attention to this matter.
+
+Sincerely,
+
+[Your Name]
+[Your Contact Information]
+
+~~~~~~~~~~~~~~
+Category: Loan Closure/Payoff
+~~~~~~~~~~~~~~
+Subcategory: Loan Payoff (Full)
+~~~~~~~~~~~~~~
+mainask: dummy
+
+~~~~~~~~~~~~~~
