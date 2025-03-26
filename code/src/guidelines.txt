@@ -1,0 +1,79 @@
+Here's a breakdown of Financial Loan Processing "Request Types" and their associated "Sub Request Types," along with descriptions:
+
+1. Request Type: Loan Application
+
+Description: This request type covers all activities related to initiating a new loan.
+
+Sub Request Types:
+New Loan Application (Personal Loan):
+Description: Request for a new personal loan for individual needs (e.g., debt consolidation, home improvement, education).
+New Loan Application (Auto Loan):
+Description: Request for a new loan to finance the purchase of a vehicle.
+New Loan Application (Mortgage Loan):
+Description: Request for a new loan to finance the purchase of real estate.
+New Loan Application (Business Loan):
+Description: Request for a new loan for business purposes (e.g., working capital, expansion, equipment purchase).
+Loan Pre-Qualification:
+Description: Request to determine the potential loan amount and terms a borrower may qualify for before a formal application.
+
+
+2. Request Type: Loan Modification/Restructuring
+
+Description: This request type involves changes to the terms of an existing loan.
+
+Sub Request Types:
+Loan Term Extension:
+Description: Request to extend the repayment period of the loan.
+Interest Rate Adjustment:
+Description: Request to change the interest rate of the loan.
+Payment Plan Adjustment:
+Description: Request to modify the loan's payment schedule (e.g., reduce monthly payments, defer payments).
+Loan Consolidation:
+Description: Request to combine multiple existing loans into a single loan with new terms.
+Loan Forbearance:
+Description: Request for temporary postponement of loan payments.
+
+
+3. Request Type: Loan Servicing
+
+Description: This request type covers ongoing activities related to managing an existing loan.
+
+Sub Request Types:
+Payment Inquiry:
+Description: Request to inquire about loan payment status, amounts, or history.
+Account Statement Request:
+Description: Request for a statement of loan account activity.
+Loan Payoff Request:
+Description: Request for information on the amount required to fully pay off the loan.
+Escrow Inquiry:
+Description: Requests related to escrow accounts associated with mortgage loans.
+Address/Contact Information Update:
+Description: Request to change the borrower's contact information.
+
+
+4. Request Type: Loan Closure/Payoff
+
+Description: This request type pertains to the finalization of a loan.
+
+Sub Request Types:
+Loan Payoff (Full):
+Description: Request to make a full payment to close the loan.
+Loan Release/Discharge:
+Description: Request for documentation confirming the loan has been paid off and the lien has been released.
+Loan Satisfaction Letter:
+Description: Request for a letter confirming that the loan has been fully satisfied.
+
+
+5. Request Type: Loan Documentation
+
+Description: Request for loan related documents.
+
+Sub Request Types:
+Loan Agreement copy request:
+Description: Request a copy of the original signed loan document.
+Payment history copy request:
+Description: Request a copy of the payment history.
+Tax document request (1098):
+Description: Request for tax related loan documentation.
+Lien release document request:
+Description: Request for documentation that a lien has been released.
