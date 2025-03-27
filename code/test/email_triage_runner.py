@@ -104,7 +104,8 @@ def gen_prompts(email_info):
 **3. Identify Priority:** Determine the email's priority (e.g., High, Medium, Low) based on keywords in the subject or body. Consider factors such as "urgent," "important," "kindly note","penalty" or deadlines mentioned.
 **4. Identify Primary Request Type:** Analyze the email's body and subject line for a primary request. Consider verbs like "please review,"urgent," "important," "kindly note","penalty","action needed,","authorize","disburse","numerical in terms of money" or "verify" for your approval and finally summarize the request"
 **5. Extract Sub-Requests:**  Look for secondary actions, tasks, or information needed to fulfill the main request. These could be nested within the main request or mentioned separately.
-**6. Request type if any from attachment:** List all attachments.Extract relevant information from the attachments, such as document titles or key data points like Consider verbs like "please review," "action needed,","authorize","disburse" or "verify" for your approval.Please find any primary request type in the attachment.
+**6. Request type if any from attachment:** Incase of attachment , List all attachments and their types (e.g., .jpeg, .jpg, .doc, .pdf files).Extract relevant information from the attachments, such as document titles or key data points. Consider verbs like "please review," "action needed," "authorize," "disburse," or "verify" for your approval.Identify any primary request type within the attachment.
+
 
 **Output Structure:**
 
@@ -140,6 +141,7 @@ This prompt focuses on extracting key information for email triage, including ha
   ]
 
   return prompts
+
 
 
 
